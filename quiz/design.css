@@ -1,0 +1,102 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    background-color: gray;
+}
+#top
+{
+    letter-spacing: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    text-align: center;
+    border: 0.5px solid rgb(78, 78, 78);
+    background-color: yellow;
+    border-radius: 0px 0px 10px 10px;
+    height: 50px;
+    width: 100%;
+    color: gray;
+}
+
+#score
+{
+    background-color: aqua;
+    box-shadow: 10px 20px 100px gray inset;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    margin: 85px 10px;
+    height: 300px;
+    width: 250px;
+    float: right;
+}
+
+#pointsDiv
+{
+    margin: 40% 0px;
+}
+
+span
+{
+    border-radius: 30px;
+    border: 5px solid rgb(14, 195, 195);
+    background-color: white;
+    font-size: 40px;
+    color: gray;
+    text-shadow: 2px 2px 3px black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
+
+#questions
+{
+    margin: 100px 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 35px;
+    box-shadow: 10px 20px 100px gray inset;
+    position: absolute;
+    width: 700px;
+    height:300px;
+    overflow-y: scroll;
+    background-color: aqua;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#submitButton
+{
+    margin: 250px 950px;
+    position: absolute;
+}
+
+#points
+{
+    background-color: aqua;
+}
+
+.ques
+{
+    text-align: center;
+    height: 250px;
+    width: 650px;
+    padding: 20px;
+}
+
+.toggleButton
+{
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.quesHeading
+{
+
+}

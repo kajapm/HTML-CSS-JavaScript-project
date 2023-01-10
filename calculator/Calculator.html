@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <title>Calculator</title>
+    <style>
+        button
+        {
+            height: 50px;
+            width: 60px;
+            border-radius: 5px;
+            background-color: lightgray;
+        }
+
+        input
+        {
+            width: 250px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: lightgrey;
+        }
+        .content
+        {
+            margin: 10% 40%;
+        }
+
+        p
+        {
+            font-size: 30px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>-simple calculator-</h1>
+        <table>
+        <input type="text" id="display">
+        <br>
+        <br>
+        <tr>
+            <td><button onclick="getValue('7')">7</button></td>
+            <td><button onclick="getValue('8')">8</button></td>
+            <td><button onclick="getValue('9')">9</button></td>
+            <td><button onclick="getValue('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getValue('4')">4</button></td>
+            <td><button onclick="getValue('5')">5</button></td>
+            <td><button onclick="getValue('6')">6</button></td>
+            <td><button onclick="getValue('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getValue('1')">1</button></td>
+            <td><button onclick="getValue('2')">2</button></td>
+            <td><button onclick="getValue('3')">3</button></td>
+            <td><button onclick="getValue('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="clear1()">C</button></td>
+            <td><button onclick="getValue('0')">0</button></td>
+            <td><button onclick="getValue('.')">.</button></td>
+            <td><button onclick="calculate()">=</button></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    var input="0";
+    var display=document.getElementById("display");
+    display.value=input;
+    input="";
+
+    function getValue(val)
+    {
+        display.value=(input+=val);
+    }
+    function calculate()
+    {
+        display.value=eval(input);
+    }
+    function clear1()
+    {
+        input="0";
+        display.value=input;
+        input="";
+    }
+</script>
+
+</body>
+</html>
